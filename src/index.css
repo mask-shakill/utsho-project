@@ -2,3 +2,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mask-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.masked-image {
+  clip-path: path(
+    "M409.5 0L506.153 334.436H818.93L565.888 541.128L662.542 875.564L409.5 668.872L156.458 875.564L253.112 541.128L0.0701599 334.436H312.847L409.5 0Z"
+  );
+}
+
+.svg-container {
+  width: 700px; /* Adjust this to your desired width */
+  height: 689px; /* Adjust this to your desired height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

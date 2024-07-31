@@ -1,42 +1,23 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.mask-container {
+  position: relative;
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.masked-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  clip-path: url(#clip-path-2); /* Apply the clip-path */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.mask-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 300 300"%3E%3Cdefs%3E%3CclipPath id="clip-path-2"%3E%3Cpath d="M 88.15625 30 C 95.046875 37.773438 100.894531 46.335938 105.214844 55.332031 C 120.484375 87.117188 110.097656 115.761719 100.054688 143.464844 C 89.921875 171.421875 80.347656 197.824219 97.816406 225 C 117.210938 255.164062 147.816406 267.421875 177.414062 279.273438 C 186.433594 282.886719 195.3125 286.449219 203.75 290.4375 L 235.683594 290.4375 L 235.683594 30 Z M 88.15625 30 "%3E%3C/path%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E');
+  clip-path: url(#clip-path-2); /* Apply the clip-path */
 }
