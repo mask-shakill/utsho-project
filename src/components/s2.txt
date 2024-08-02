@@ -1,0 +1,52 @@
+import React from "react";
+
+const App = () => {
+  return (
+    <div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="793"
+        zoomAndPan="magnify"
+        viewBox="0 0 595.5 842.249979"
+        height="1122"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.0"
+      >
+        <defs>
+          <clipPath id="393ea89859">
+            <path
+              d="M 42.777344 119.175781 L 512 119.175781 L 512 676 L 42.777344 676 Z M 42.777344 119.175781 "
+              clip-rule="nonzero"
+            />
+          </clipPath>
+          <clipPath id="f5a21e4111">
+            <path
+              d="M 99.164062 513.875 L 103.871094 674.175781 C 103.871094 674.175781 470.546875 676.980469 470.546875 674.175781 C 470.546875 671.375 511.800781 119.175781 511.800781 119.175781 L 159.136719 217.710938 L 255.652344 396.730469 L 42.777344 421.058594 Z M 99.164062 513.875 "
+              clip-rule="nonzero"
+            />
+          </clipPath>
+        </defs>
+        <g clip-path="url(#393ea89859)">
+          <g clip-path="url(#f5a21e4111)">
+            <path
+              fill="#1a1919"
+              d="M 42.777344 119.175781 L 511.714844 119.175781 L 511.714844 675.410156 L 42.777344 675.410156 Z M 42.777344 119.175781 "
+              fill-opacity="1"
+              fill-rule="nonzero"
+            />
+            <image
+              xlinkHref="https://img.freepik.com/premium-photo/dog-image_1115474-21644.jpg?ga=GA1.1.498477925.1722419523&semt=ais_hybrid"
+              x="0"
+              y="0"
+              width="100%"
+              height="100%"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+export default App;

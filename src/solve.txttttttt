@@ -1,0 +1,35 @@
+import React from "react";
+
+const App = () => {
+  return (
+    <div className="bg-blue-500 h-[700px] w-[700px] relative">
+      <div className="absolute -right-28 top-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="500"
+          height="500"
+          viewBox="0 0 595.5 842.249979"
+        >
+          <defs>
+            <clipPath id="clip-path">
+              <path
+                d="M 82.152344 8.582031 C 103.949219 33.179688 122.449219 60.265625 136.121094 88.730469 C 184.421875 189.285156 151.5625 279.921875 119.792969 367.5625 C 87.726562 456.007812 57.441406 539.542969 112.714844 625.527344 C 174.070312 720.953125 270.902344 759.734375 364.546875 797.242188 C 393.078125 808.667969 421.164062 819.9375 447.867188 832.558594 L 548.894531 832.558594 L 548.894531 8.582031 Z M 82.152344 8.582031 "
+                clip-rule="nonzero"
+              />
+            </clipPath>
+          </defs>
+          <image
+            href="https://img.freepik.com/premium-photo/dog-image_1115474-21644.jpg?ga=GA1.1.498477925.1722419523&semt=ais_hybrid"
+            x="0"
+            y="0"
+            width="895.5"
+            height="842.249979"
+            clip-path="url(#clip-path)"
+          />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+export default App;
